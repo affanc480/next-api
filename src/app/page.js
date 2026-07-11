@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
+
 
 export default function Home() {
   return (
@@ -60,6 +62,10 @@ export default function Home() {
             Documentation
           </a>
         </div>
+        <Link href="/users" className={styles.directoryButton}>
+          <span className={styles.directoryEyebrow}>Directory</span>
+          <span className={styles.directoryLabel}>Active Records →</span>
+        </Link>
       </main>
     </div>
   );

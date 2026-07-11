@@ -139,4 +139,42 @@ a.secondary {
     --button-secondary-hover: #1a1a1a;
     --button-secondary-border: #1a1a1a;
   }
+  .directoryButton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.4rem;
+  background: #10162a;
+  border: 1px solid #1c2440;
+  border-radius: 6px;
+  text-decoration: none;
+  width: fit-content;
+  font-family: 'JetBrains Mono', monospace;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.directoryButton:hover {
+  border-color: #00e5ff;
+  background: #131b34;
+  transform: translateX(4px);
+}
+
+.directoryEyebrow {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #00e5ff;
+  opacity: 0.85;
+}
+
+.directoryLabel {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #e8ecf4;
+}
+
+.directoryButton:hover .directoryLabel {
+  color: #00e5ff;
+}
 }
