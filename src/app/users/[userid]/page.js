@@ -49,15 +49,15 @@ export default async function Page({ params }){
             <div className={styles.card}>
                 <p className={styles.name}>{userData.name}</p>
                 <div className={styles.row}>
-                    <span className={styles.label}>ID</span>
+                    <span className={styles.label}>ID: </span>
                     <span className={styles.value}>{userData.id}</span>
                 </div>
                 <div className={styles.row}>
-                    <span className={styles.label}>Email Address</span>
+                    <span className={styles.label}>Email Address: </span>
                     <span className={styles.value}>{userData.email}</span>
                 </div>
                 <div className={styles.row}>
-                    <span className={styles.label}>Age</span>
+                    <span className={styles.label}>Age: </span>
                     <span className={styles.value}>{userData.age}</span>
                 </div>
             </div>
